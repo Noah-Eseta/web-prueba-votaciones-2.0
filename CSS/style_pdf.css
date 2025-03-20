@@ -1,0 +1,39 @@
+.pdf-style #tabla-resultados {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pdf-style #tabla-resultados th, .pdf-style #tabla-resultados td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.pdf-style #tabla-resultados img {
+    width: 50px;
+    height: 50px;
+}
+
+.pdf-style h2 {
+    color: #FF0000;
+}
+
+.pdf-style table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pdf-style th, .pdf-style td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+.pdf-style th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.pdf-style td {
+    background-color: #fff;
+}

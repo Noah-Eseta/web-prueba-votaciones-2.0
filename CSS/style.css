@@ -1,0 +1,443 @@
+:root {
+    --color-amarillo-maiz: #FFDD00;
+    --color-amarillo-maiz-claro: #FFF4B2;
+    --color-amarillo-maiz-oscuro: #CCAA00;
+    --color-rojo: #FF0000;
+    --color-rojo-claro: #FF6666;
+    --color-rojo-oscuro: #CC0000;
+    --color-blanco: #FFFFFF;
+    --color-texto: #333333;
+    --color-texto-claro: #666666;
+    --color-texto-oscuro: #000000;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, label, input, button, table, th, td {
+    font-family: 'Arial', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBackground {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+body {
+    background-color: var(--color-amarillo-maiz-claro);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.index-page, .votaciones-page, .resultados-page {
+    background-image: url('../Recursos/img/fondo.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-rojo);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-rojo);
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+.escudo-img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.escudo-img2 {
+    width: 30px;
+    vertical-align: middle;
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out, zoomIn 1s ease-in-out;
+}
+
+main h2 {
+    color: var(--color-rojo);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--color-texto-claro);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: var(--color-blanco);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out, zoomIn 1s ease-in-out;
+}
+
+label {
+    display: block;
+    color: var(--color-rojo-oscuro);
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-texto-claro);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--color-texto-oscuro);
+}
+
+input[type="submit"] {
+    background-color: var(--color-rojo);
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-rojo-claro);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    animation: fadeIn 1s ease-in-out, zoomIn 1s ease-in-out;
+}
+
+.card {
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out, bounceIn 1s ease-in-out;
+}
+
+.card h1 {
+    color: var(--color-rojo);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.grupos-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 95%;
+    margin: 0 auto 50px;
+    animation: fadeIn 1s ease-in-out, zoomIn 1s ease-in-out;
+}
+
+.grupo {
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out, bounceIn 1s ease-in-out;
+}
+
+.grupo h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out, bounceIn 1s ease-in-out;
+}
+
+.grupo h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: var(--color-texto-oscuro);
+}
+
+.grupo p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: var(--color-texto-claro);
+}
+
+.grupo button {
+    background-color: var(--color-rojo);
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.grupo button:hover {
+    background-color: var(--color-rojo-claro);
+}
+
+.grupo img {
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.modal, .popup, #errorCard {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInBackground 0.5s ease-in-out forwards;
+}
+
+.modal-content, .popup-content, #errorCard .popup-content {
+    background-color: var(--color-blanco);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.close {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.error-card .card-content {
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.error-card h2, #errorCard h2 {
+    color: var(--color-rojo);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.error-card p, #errorCard p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: var(--color-texto-claro);
+}
+
+.error-card button, #errorCard button {
+    background-color: var(--color-rojo);
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.error-card button:hover, #errorCard button:hover {
+    background-color: var(--color-rojo-claro);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: transparent;
+    animation: fadeIn 1s ease-in-out, zoomIn 1s ease-in-out;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--color-rojo);
+    background-color: var(--color-blanco);
+    color: var(--color-rojo);
+}
+
+td img {
+    max-width: 100%;
+    max-height: 80px;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#descargar-pdf-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-rojo);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#descargar-pdf-btn:hover {
+    background-color: var(--color-rojo-claro);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-rojo);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-rojo-claro);
+}
+
+#confirmar-voto-btn, #volver-inicio-btn {
+    background-color: var(--color-rojo);
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#confirmar-voto-btn:hover, #volver-inicio-btn:hover {
+    background-color: var(--color-rojo-claro);
+}
+
+button.resultados-btn {
+    background-color: var(--color-rojo);
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button.resultados-btn:hover {
+    background-color: var(--color-rojo-claro);
+}
+
+#resultados {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-blanco);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--color-texto-oscuro);
+}
+
+#resultados table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#resultados th, #resultados td {
+    padding: 15px;
+    border: 1px solid var(--color-rojo);
+    text-align: center;
+}
+
+#resultados th {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+}
+
+#resultados td {
+    background-color: var(--color-blanco);
+    color: var(--color-texto-oscuro);
+}
+
+#resultados img {
+    max-width: 100px;
+    height: auto;
+}
+
+h2 {
+    color: var(--color-rojo);
+}
+
+.no-border {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#resultados, #resultados table {
+    color: var(--color-texto-oscuro);
+}
+
+.no-border {
+    border: none !important;
+    box-shadow: none !important;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style_pdf.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+    <script type="module" src="Scripts/scripts_mostrar_resultados.js" defer></script>
+    <script type="module" src="Scripts/scripts_generar_pdf.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="Recursos/img/Escudo.webp" alt="Escudo" class="escudo-img"> 
+            Elecciones Municipales Escolares
+        </h1>
+    </header>
+    <main>
+        <div id="resultados"></div>
+        <button id="descargar-pdf-btn">Descargar PDF</button>
+    </main>
+</body>
+</html>
